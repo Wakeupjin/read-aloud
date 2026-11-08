@@ -32,3 +32,22 @@ audio{max-width:100%}
 footer{color:var(--muted);font-size:13px;margin-top:48px;border-top:1px solid var(--line);padding-top:16px}
 .list a{display:block;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
 .list a span{display:block;color:var(--muted);font-size:14px}
+/* onboarding */
+.onboard{background:var(--soft);border-radius:14px;padding:4px 18px;margin:0 0 28px}
+.onboard>summary{cursor:pointer;font-weight:700;font-size:15px;padding:12px 0;list-style:none}
+.onboard>summary::-webkit-details-marker{display:none}
+.onboard>summary::after{content:"펼치기";float:right;font-weight:400;font-size:13px;color:var(--muted)}
+.onboard[open]>summary::after{content:"접기"}
+.onboard .lead{margin:0 0 14px}
+.onboard .steps{list-style:none;counter-reset:s;margin:0 0 14px;padding:0;display:grid;gap:12px}
+.onboard .steps li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;column-gap:10px}
+.onboard .steps li::before{content:counter(s);grid-row:span 2;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.onboard .steps b{display:block}
+.onboard .steps span{color:var(--ink)}
+.onboard .rules{margin:0 0 14px;padding-left:18px;color:var(--ink)}
+.onboard .rules li{margin:4px 0}
+.onboard .why{border-top:1px solid var(--line);padding:6px 0 0;margin:0 0 14px}
+.onboard .why summary{cursor:pointer;color:var(--accent);font-size:15px;padding:6px 0}
+.onboard .why p{margin:8px 0}
+.onboard .src{color:var(--muted);font-size:13px}
+.onboard .start{margin:0 0 16px}
