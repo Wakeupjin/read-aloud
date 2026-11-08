@@ -1,0 +1,34 @@
+:root{
+  --bg:#ffffff; --ink:#111111; --muted:#6b6b6b; --line:#e7e7e7; --accent:#0a8a3a; --accent-ink:#ffffff; --soft:#f4f7f5;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0b0b0b; --ink:#f2f2f2; --muted:#9a9a9a; --line:#222; --accent:#2fd36b; --accent-ink:#04140a; --soft:#121a15; }
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:17px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 120px}
+a{color:var(--accent)}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+.meta{color:var(--muted);font-size:14px;margin:0 0 24px}
+.guide{background:var(--soft);border-radius:14px;padding:16px 18px;margin:0 0 28px}
+.guide h2{font-size:15px;margin:0 0 8px}
+.guide ol{margin:0;padding-left:20px}
+.guide li{margin:4px 0}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 0;margin:0 0 20px}
+button,select{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:7px 14px;cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button.rec.on{background:#d9342b;border-color:#d9342b;color:#fff}
+.spacer{flex:1}
+.script{font-family:Charter,"Iowan Old Style",Georgia,serif;font-size:var(--fs,21px);line-height:1.65}
+.script h3{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:34px 0 8px}
+.p{position:relative;margin:0 0 18px;padding:6px 8px 6px 40px;border-radius:10px}
+.p .play{position:absolute;left:4px;top:8px;width:28px;height:28px;padding:0;border-radius:50%;font-size:12px;line-height:26px;text-align:center}
+.p.now{background:var(--soft)}
+.rec-out{margin:12px 0 0;display:none;gap:8px;align-items:center;flex-wrap:wrap}
+.rec-out.show{display:flex}
+audio{max-width:100%}
+footer{color:var(--muted);font-size:13px;margin-top:48px;border-top:1px solid var(--line);padding-top:16px}
+.list a{display:block;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.list a span{display:block;color:var(--muted);font-size:14px}
