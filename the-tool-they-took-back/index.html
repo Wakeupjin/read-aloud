@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tool They Took Back</title>
+<meta name="description" content="3분짜리 영어 낭독 원고. 먼저 듣고, 원어민처럼 소리 내 읽는다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Tool They Took Back">
+<meta property="og:description" content="3분짜리 영어 낭독 원고. 먼저 듣고, 원어민처럼 소리 내 읽는다.">
+<meta property="og:image" content="https://wakeupjin.github.io/read-aloud/the-tool-they-took-back/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/reader.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker" lang="ko">낭독 원고 8</p>
+  <h1>The Tool They Took Back</h1>
+  <p class="meta" lang="ko">소리 내 읽으면 3분쯤 걸린다</p>
+
+  <details class="onboard" id="onboard" open lang="ko">
+  <summary>낭독하는 법</summary>
+  <p class="lead">이 원고는 정찬용 박사의 책 영어공부 절대로 하지 마라에 나오는 낭독법대로 읽는다. 아기가 모국어를 익히는 순서 그대로, 먼저 듣고 흉내 내고 소리 내 읽는다.</p>
+  <ol class="steps">
+    <li><b>먼저 듣는다</b><span>문단 앞 ▶를 눌러 원어민 소리를 듣는다. 뜻은 해석하지 않고 소리만 듣는다.</span></li>
+    <li><b>성대모사하듯 따라 읽는다</b><span>큰 소리로 처음부터 끝까지 읽는다. 발음과 억양을 그대로 흉내 낸다. 쉼표에서 숨 쉬고, 앞에 앉은 사람에게 설명해 주듯 천천히 읽는다.</span></li>
+    <li><b>녹음해서 들어 본다</b><span>읽을 때는 잘한 것 같아도, 녹음을 들으면 어색한 곳이 들린다. 그 문단만 다시 듣고 다시 읽는다. 입에 붙었다 싶으면 끝낸다.</span></li>
+  </ol>
+  <ul class="rules">
+    <li>다 이해 안 돼도 괜찮다. 같은 글을 몇 번 소리 내 읽다 보면 뜻이 저절로 잡힌다.</li>
+    <li>모르는 단어는 찾지 않는다. 자주 나오는 단어는 결국 뇌가 알아서 익힌다. 정 궁금한 것만 영영사전으로 보고, 한국어로 번역하지 않는다.</li>
+    <li>외우지 않는다. 소리 내 읽기만 해도 머리에 남고, 필요할 때 입으로 나온다.</li>
+    <li>일주일에 하루는 영어를 쉰다.</li>
+  </ul>
+  <details class="why">
+    <summary>왜 이렇게 읽나</summary>
+    <p>우리는 한국어를 문법책이나 단어장으로 익히지 않았다. 몇 년을 듣고 흉내 내고 말하다 보니, 어느새 머리보다 혀가 먼저 말하게 됐다.</p>
+    <p>정찬용 박사는 이걸 체화라고 부른다. 자전거나 수영처럼 몸이 익히는 거라, 한동안 쉬어도 다시 하면 된다. 외운 단어는 시간이 지나면 잊히지만, 입에 붙은 소리는 남는다.</p>
+    <p>나도 이 방법으로 영어를 익혔다. 박사님께 배우면서 처음엔 듣기만 했고, 그다음엔 원서를 소리 내 읽으며 걸어 다녔다.</p>
+    <p class="src">방법 출처: 정찬용 박사의 영어공부 절대로 하지 마라와 그 개정판. 설명은 책 내용을 바탕으로 직접 정리했다. 원고 음성은 AI 음성이다.</p>
+  </details>
+  <button class="primary start" id="start" type="button">첫 문단 듣고 시작하기</button>
+</details>
+
+  <div class="bar">
+    <button id="listen-all" class="primary" type="button">전체 듣기</button>
+    <button id="stop" type="button">멈춤</button>
+    <select id="rate" aria-label="속도">
+      <option value="0.8">0.8x</option>
+      <option value="0.9">0.9x</option>
+      <option value="1" selected>1.0x</option>
+    </select>
+    <button id="size" type="button" aria-label="글자 크기">Aa</button>
+    <span class="spacer"></span>
+    <button id="rec" class="rec" type="button">내 목소리 녹음</button>
+  </div>
+  <div id="rec-out" class="rec-out"><audio id="rec-audio" controls></audio><a id="rec-save" href="#">내 낭독 저장</a></div>
+
+  <article class="script" lang="en" data-audio="1">
+    <h3>Built by the people closest to the problem</h3>
+    <p class="p"><span class="t">Goldman Sachs is one of the biggest banks in the world. About forty-seven thousand people work there, and a little over twelve thousand of them are engineers. Most of the others are traders, who buy and sell for clients, and bankers, who help companies raise money.</span></p>
+    <p class="p"><span class="t">In July, the bank's chief information officer said something surprising. Traders and bankers who had never learned to code were building their own tools with AI. They simply described what they wanted, and the AI wrote the code. Then they handed their tools to the engineers to make them better.</span></p>
+    <h3>Taken back in October</h3>
+    <p class="p"><span class="t">Then, in October, the rules changed. According to Bloomberg, new guidance said that AI coding tools like Claude Code and GitHub were for engineers only. Most traders and bankers lost access, and some of them were not happy. They had been using the tools to watch how clients were trading, to model how markets might move, and to put together reports.</span></p>
+    <h3>Why a bank worries</h3>
+    <p class="p"><span class="t">Why would a bank take away a tool that people liked? Think about what a coding agent does. It reads files, writes programs, and runs them, often with the same access as the person using it. When an engineer writes code, it is checked and tested before it touches anything important. When a trader builds a quick tool, it can end up in daily use without anyone checking it at all.</span></p>
+    <p class="p"><span class="t">Banks also have walls inside them. A banker working on a secret deal must not share what they know with a trader who could make money from it. A tool built in a hurry was not designed with those walls in mind. And when something goes wrong, there may be nobody who can explain what the code really does.</span></p>
+    <h3>Selling what you cannot use</h3>
+    <p class="p"><span class="t">There is one more twist. Goldman Sachs is one of the two lead banks taking Anthropic, the company that makes Claude, public on the stock market. So for the next few weeks, Goldman's bankers will be selling shares in a company whose coding tool most of them are no longer allowed to use.</span></p>
+    <p class="p"><span class="t">In the end, the hard question is about responsibility. Engineers know how to check code. Traders know which problems are worth solving. A bank that wants the best of these tools will need both.</span></p>
+  </article>
+
+  <footer>
+    낭독 원고 · <a href="https://www.threads.com/@worldwideworkalot">@worldwideworkalot</a>. 골드만삭스의 AI 코딩 도구 제한(블룸버그 2026년 11월 보도)과 앤트로픽 상장 주관사에 관한 공개 보도를 바탕으로 쉬운 영어로 직접 썼다. 기사 문장을 옮긴 것은 아니다.
+    <br><a href="../">다른 낭독 원고</a>
+  </footer>
+</div>
+<script src="../assets/reader.js"></script>
+</body>
+</html>
