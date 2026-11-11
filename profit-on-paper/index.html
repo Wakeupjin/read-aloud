@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profit on Paper</title>
+<meta name="description" content="4분짜리 영어 낭독 원고. 먼저 듣고, 원어민처럼 소리 내 읽는다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Profit on Paper">
+<meta property="og:description" content="4분짜리 영어 낭독 원고. 먼저 듣고, 원어민처럼 소리 내 읽는다.">
+<meta property="og:image" content="https://wakeupjin.github.io/read-aloud/profit-on-paper/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/reader.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker" lang="ko">낭독 원고 9</p>
+  <h1>Profit on Paper</h1>
+  <p class="meta" lang="ko">소리 내 읽으면 4분쯤 걸린다</p>
+
+  <details class="onboard" id="onboard" open lang="ko">
+  <summary>낭독하는 법</summary>
+  <p class="lead">이 원고는 정찬용 박사의 책 영어공부 절대로 하지 마라에 나오는 낭독법대로 읽는다. 아기가 모국어를 익히는 순서 그대로, 먼저 듣고 흉내 내고 소리 내 읽는다.</p>
+  <ol class="steps">
+    <li><b>먼저 듣는다</b><span>문단 앞 ▶를 눌러 원어민 소리를 듣는다. 뜻은 해석하지 않고 소리만 듣는다.</span></li>
+    <li><b>성대모사하듯 따라 읽는다</b><span>큰 소리로 처음부터 끝까지 읽는다. 발음과 억양을 그대로 흉내 낸다. 쉼표에서 숨 쉬고, 앞에 앉은 사람에게 설명해 주듯 천천히 읽는다.</span></li>
+    <li><b>녹음해서 들어 본다</b><span>읽을 때는 잘한 것 같아도, 녹음을 들으면 어색한 곳이 들린다. 그 문단만 다시 듣고 다시 읽는다. 입에 붙었다 싶으면 끝낸다.</span></li>
+  </ol>
+  <ul class="rules">
+    <li>다 이해 안 돼도 괜찮다. 같은 글을 몇 번 소리 내 읽다 보면 뜻이 저절로 잡힌다.</li>
+    <li>모르는 단어는 찾지 않는다. 자주 나오는 단어는 결국 뇌가 알아서 익힌다. 정 궁금한 것만 영영사전으로 보고, 한국어로 번역하지 않는다.</li>
+    <li>외우지 않는다. 소리 내 읽기만 해도 머리에 남고, 필요할 때 입으로 나온다.</li>
+    <li>일주일에 하루는 영어를 쉰다.</li>
+  </ul>
+  <details class="why">
+    <summary>왜 이렇게 읽나</summary>
+    <p>우리는 한국어를 문법책이나 단어장으로 익히지 않았다. 몇 년을 듣고 흉내 내고 말하다 보니, 어느새 머리보다 혀가 먼저 말하게 됐다.</p>
+    <p>정찬용 박사는 이걸 체화라고 부른다. 자전거나 수영처럼 몸이 익히는 거라, 한동안 쉬어도 다시 하면 된다. 외운 단어는 시간이 지나면 잊히지만, 입에 붙은 소리는 남는다.</p>
+    <p>나도 이 방법으로 영어를 익혔다. 박사님께 배우면서 처음엔 듣기만 했고, 그다음엔 원서를 소리 내 읽으며 걸어 다녔다.</p>
+    <p class="src">방법 출처: 정찬용 박사의 영어공부 절대로 하지 마라와 그 개정판. 설명은 책 내용을 바탕으로 직접 정리했다. 원고 음성은 AI 음성이다.</p>
+  </details>
+  <button class="primary start" id="start" type="button">첫 문단 듣고 시작하기</button>
+</details>
+
+  <div class="bar">
+    <button id="listen-all" class="primary" type="button">전체 듣기</button>
+    <button id="stop" type="button">멈춤</button>
+    <select id="rate" aria-label="속도">
+      <option value="0.8">0.8x</option>
+      <option value="0.9">0.9x</option>
+      <option value="1" selected>1.0x</option>
+    </select>
+    <button id="size" type="button" aria-label="글자 크기">Aa</button>
+    <span class="spacer"></span>
+    <button id="rec" class="rec" type="button">내 목소리 녹음</button>
+  </div>
+  <div id="rec-out" class="rec-out"><audio id="rec-audio" controls></audio><a id="rec-save" href="#">내 낭독 저장</a></div>
+
+  <article class="script" lang="en" data-audio="1">
+    <h3>A company that sells pictures of Earth</h3>
+    <p class="p"><span class="t">Satellogic is a satellite company that started in Argentina. It has launched dozens of small satellites, each about the size of a mini fridge. They take pictures of the Earth that are sharp enough to show the shape of a car in a parking lot, and the company sells those pictures to governments and businesses.</span></p>
+    <h3>The headline</h3>
+    <p class="p"><span class="t">On November tenth, Satellogic reported its results for the third quarter, and the headline looked great. Revenue was sixteen million dollars, more than four times what it was a year earlier and about a quarter higher than Wall Street had expected. The company also reported a profit of twenty-eight million dollars.</span></p>
+    <p class="p"><span class="t">But one line further down, there was a gain of thirty million dollars. Every quarter, the company has to put a new price on certain financial instruments on its books. When that price moves, a gain or a loss appears on paper, but no cash comes in. The company&#x27;s own finance chief said the gain did not show how the business was really doing.</span></p>
+    <p class="p"><span class="t">These paper numbers can swing hard. In the first half of the year, the same line showed losses of more than one hundred thirty million dollars. Add up the first nine months, and the company lost about one hundred ten million dollars.</span></p>
+    <h3>Taking out the satellite sales</h3>
+    <p class="p"><span class="t">Operating income is a better place to look, because it leaves out those paper gains and losses. Last quarter, Satellogic made an operating profit for the first time. This quarter, it was back to a loss of about two point three million dollars.</span></p>
+    <p class="p"><span class="t">Part of the revenue came from selling satellites, not pictures. Portugal ordered two satellites, and the second one was delivered this quarter. Take out the satellite sales and what those satellites cost, and the loss grows to more than nine million dollars. That is bigger than the seven million from the quarter before. The company said it was spending more on hiring and on its sales team.</span></p>
+    <h3>The picture business got smaller</h3>
+    <p class="p"><span class="t">The picture business itself shrank, from seven point one million dollars to six point six million. The company explained why. Part of that revenue came from a deal with Palantir, and it was revenue on paper, with no cash coming in. That part went down, and the company did not say how big it is.</span></p>
+    <h3>Selling the cameras in the sky</h3>
+    <p class="p"><span class="t">After the quarter ended, Satellogic signed another deal. It will hand over three satellites that are already in orbit to a government customer, for about thirty-seven million dollars in total. That is more than twelve million dollars each, for satellites the company says cost about one point three million dollars.</span></p>
+    <p class="p"><span class="t">Think of a photo studio that also makes its own cameras. It sells a new camera to one customer, and then it sells the cameras it was using to take pictures. The money looks big, but every camera it sells is one less camera taking pictures.</span></p>
+    <h3>Two ways to read it</h3>
+    <p class="p"><span class="t">There is another way to see this. If a satellite that costs a little over one million dollars can be sold for twelve, maybe Satellogic is turning from a photo studio into a camera maker. The company says demand from governments is growing, and countries are paying to have their own eyes in space.</span></p>
+    <p class="p"><span class="t">Investors liked the report, and the stock rose more than nine percent in after-hours trading. Still, the big question has not changed: when will the picture business stand on its own? Next quarter, the number to watch is what is left after you take out the satellite sales, the paper gains and the Palantir money.</span></p>
+  </article>
+
+  <footer>
+    낭독 원고 · <a href="https://www.threads.com/@worldwideworkalot">@worldwideworkalot</a>. Satellogic의 2026년 3분기 실적 발표(11월 10일)를 바탕으로 쉬운 영어로 직접 썼다. 발표문 문장을 옮긴 것은 아니다. 투자 권유가 아니다.
+    <br><a href="../">다른 낭독 원고</a>
+  </footer>
+</div>
+<script src="../assets/reader.js"></script>
+</body>
+</html>
